@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>一日游 | TTGO 日本旅游包车</title>
+  <link rel="stylesheet" href="css/common.css" />
+</head>
+<body data-nav="day" data-list-type="day" data-page="dayTours">
+    <div class="top-bar"><div class="container"><span data-i18n="top.tagline">TTGO 日本旅游包车</span><div class="lang"><span data-lang="zh" class="active">中文</span><span data-lang="en">ENG</span><span data-lang="ja">日本語</span></div></div></div>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">TTGO</span><span class="logo-text"><strong>TTGO</strong><small data-i18n="logo.subtitle">日本旅游包车</small></span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" data-nav="home" data-i18n="nav.home">首页</a></li>
+        <li><a href="day-tours.html" data-nav="day" data-i18n="nav.day">一日游</a></li>
+        <li><a href="multi-day-tours.html" data-nav="multi" data-i18n="nav.multi">多日游</a></li>
+        <li><a href="charter.html" data-nav="charter" data-i18n="nav.charter">商务包车</a></li>
+        <li><a href="airport.html" data-nav="airport" data-i18n="nav.airport">机场接送</a></li>
+        <li><a href="about.html" data-nav="about" data-i18n="nav.about">关于我们</a></li>
+        <li><a href="contact.html" data-nav="contact" class="nav-cta" data-i18n="nav.contact">联系我们</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="菜单">☰</button>
+    </div>
+  </nav>
+
+<header class="page-hero" style="background-image:linear-gradient(105deg,rgba(6,40,71,.92),rgba(11,61,110,.8)),url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1920&q=80')">
+    <div class="container"><h1 data-i18n-page="heroTitle">一日游线路</h1><p data-i18n-page="heroSub">东京、大阪、京都周边经典一日游，中文司导包车直达</p></div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html" data-i18n="common.home">首页</a> / <span data-i18n-page="crumb">一日游</span></div>
+      <div class="section-title">
+        <h2 data-i18n-page="listTitle">全部一日游</h2>
+        <p data-i18n-page="listSub">点击线路查看详细行程与报价说明</p>
+      </div>
+      <div class="tour-grid" id="tourList"></div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <h2 data-i18n-page="ctaTitle">需要定制一日游？</h2>
+    <p style="opacity:.9;margin-bottom:16px" data-i18n-page="ctaSub">告诉我们您的出发地与想去的景点</p>
+    <a href="contact.html?service=day" class="btn btn-gold" data-i18n-page="ctaBtn">留言预定</a>
+  </section>
+
+  <footer></footer>
+    <script src="js/locales.js"></script>
+  <script src="js/tours-i18n.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/list.js"></script>
+  <script src="js/header-footer.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>

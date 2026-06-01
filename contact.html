@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>联系我们 | TTGO 日本旅游包车</title>
+  <link rel="stylesheet" href="css/common.css" />
+</head>
+<body data-nav="contact" data-page="contact">
+    <div class="top-bar"><div class="container"><span data-i18n="top.tagline">TTGO 日本旅游包车</span><div class="lang"><span data-lang="zh" class="active">中文</span><span data-lang="en">ENG</span><span data-lang="ja">日本語</span></div></div></div>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">TTGO</span><span class="logo-text"><strong>TTGO</strong><small data-i18n="logo.subtitle">日本旅游包车</small></span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" data-nav="home" data-i18n="nav.home">首页</a></li>
+        <li><a href="day-tours.html" data-nav="day" data-i18n="nav.day">一日游</a></li>
+        <li><a href="multi-day-tours.html" data-nav="multi" data-i18n="nav.multi">多日游</a></li>
+        <li><a href="charter.html" data-nav="charter" data-i18n="nav.charter">商务包车</a></li>
+        <li><a href="airport.html" data-nav="airport" data-i18n="nav.airport">机场接送</a></li>
+        <li><a href="about.html" data-nav="about" data-i18n="nav.about">关于我们</a></li>
+        <li><a href="contact.html" data-nav="contact" class="nav-cta" data-i18n="nav.contact">联系我们</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="菜单">☰</button>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container"><h1 data-i18n-page="heroTitle">联系我们</h1>
+    <p data-i18n-page="heroSub">在线留言预定，我们将在 24 小时内回复行程与报价</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html" data-i18n="common.home">首页</a> / <span data-i18n-page="crumb">联系我们</span></div>
+      <div class="info-grid">
+        <div class="info-box">
+          <h3>联系方式</h3>
+          <ul>
+            <li><strong>微信</strong>：ttgo-japan</li>
+            <li><strong>Line</strong>：@ttgo-japan</li>
+            <li><strong>邮箱</strong>：booking@ttgo.jp</li>
+            <li><strong>服务时间</strong>：9:00–21:00（日本时间）</li>
+          </ul>
+          <h3 style="margin-top:24px">预定须知</h3>
+          <ul>
+            <li>请尽量提前 3–7 天预约</li>
+            <li>旺季（樱花、红叶、寒暑假）建议更早</li>
+            <li>报价含司机、油费、高速（按套餐约定）</li>
+            <li>取消政策以确认单为准</li>
+          </ul>
+        </div>
+        <div class="form-card">
+          <h3 style="color:var(--primary);margin-bottom:20px" data-i18n="form.contactFormTitle">在线留言预定</h3>
+          <form id="contactForm" data-ttgo-form data-storage="ttgo_messages">
+            <div class="form-row">
+              <div class="form-group">
+                <label><span data-i18n="form.name">姓名</span> <span>*</span></label>
+                <input type="text" name="name" required data-i18n-placeholder="form.namePh" placeholder="您的姓名" />
+              </div>
+              <div class="form-group">
+                <label><span data-i18n="form.phone">联系电话</span> <span>*</span></label>
+                <input type="tel" name="phone" required data-i18n-placeholder="form.phonePh" placeholder="手机或微信" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label><span data-i18n="form.date">出行日期</span> <span>*</span></label>
+                <input type="date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label><span data-i18n="form.service">服务类型</span> <span>*</span></label>
+                <select name="service" id="serviceSelect" data-i18n-select="service" required>
+                  <option value="">请选择</option>
+                  <option value="day">一日游</option>
+                  <option value="multi">多日游</option>
+                  <option value="charter">商务包车</option>
+                  <option value="airport">机场接送</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label data-i18n="form.route">意向线路 / 航班</label>
+              <input type="text" name="route" id="routeInput" data-i18n-placeholder="form.routePh" placeholder="如：富士山一日游、成田接机 CA123" />
+            </div>
+            <div class="form-group">
+              <label data-i18n="form.pax">人数 / 行李</label>
+              <input type="text" name="pax" data-i18n-placeholder="form.paxPh" placeholder="成人 4 人，大行李 3 件" />
+            </div>
+            <div class="form-group">
+              <label><span data-i18n="form.message">留言内容</span> <span>*</span></label>
+              <textarea name="message" required data-i18n-placeholder="form.messagePh" placeholder="请说明出发地、目的地、想去的景点等"></textarea>
+            </div>
+            <button type="submit" class="form-submit" data-i18n="form.submitContact">提交留言</button>
+            <p class="form-tip" data-i18n="form.tipContact">演示站点，留言保存在本机浏览器</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer></footer>
+
+  <div class="toast" id="toast" data-i18n="toast.success">感谢您的留言！我们已收到，将尽快与您联系。</div>
+
+  <script src="js/locales.js"></script>
+  <script src="js/tours-i18n.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/header-footer.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    (function () {
+      var map = { '一日游': 'day', '多日游': 'multi', '商务包车': 'charter', '机场接送': 'airport' };
+      var p = new URLSearchParams(window.location.search);
+      var s = p.get('service');
+      var r = p.get('route');
+      if (s) {
+        s = map[s] || s;
+        var sel = document.getElementById('serviceSelect');
+        if (sel) sel.value = s;
+      }
+      if (r) document.getElementById('routeInput').value = decodeURIComponent(r);
+    })();
+  </script>
+</body>
+</html>
